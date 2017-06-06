@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="test," />
+  <meta name="keywords" content="多线程,Thread," />
 
 
 
@@ -90,14 +90,17 @@
 
 
 
-<meta name="keywords" content="test">
+<meta name="description" content="1、类说明：一个同步辅助类，它允许一组线程互相等待，直到到达某个公共屏障点 (common barrier point)。在涉及一组固定大小的线程的程序中，这些线程必须不时地互相等待，此时 CyclicBarrier 很有用。因为该 barrier 在释放等待线程后可以重用，所以称它为循环 的 barrier。2、使用场景：需要所有的子任务都完成时，才执行主任务，这个时候就可以选择使用Cyclic">
+<meta name="keywords" content="多线程,Thread">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://wjwei113.github.io/2017/05/25/cj37185gb00035dzkfog1h0l8/index.html">
+<meta property="og:title" content="Java之CyclicBarrier使用">
+<meta property="og:url" content="http://wjwei113.github.io/2017/05/25/cj3lavkyt0003hizk0bk3q7q8/index.html">
 <meta property="og:site_name" content="牛刀试浮云的技术博客">
-<meta property="og:updated_time" content="2017-05-25T10:30:35.854Z">
+<meta property="og:description" content="1、类说明：一个同步辅助类，它允许一组线程互相等待，直到到达某个公共屏障点 (common barrier point)。在涉及一组固定大小的线程的程序中，这些线程必须不时地互相等待，此时 CyclicBarrier 很有用。因为该 barrier 在释放等待线程后可以重用，所以称它为循环 的 barrier。2、使用场景：需要所有的子任务都完成时，才执行主任务，这个时候就可以选择使用Cyclic">
+<meta property="og:updated_time" content="2017-06-06T07:43:07.750Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
+<meta name="twitter:title" content="Java之CyclicBarrier使用">
+<meta name="twitter:description" content="1、类说明：一个同步辅助类，它允许一组线程互相等待，直到到达某个公共屏障点 (common barrier point)。在涉及一组固定大小的线程的程序中，这些线程必须不时地互相等待，此时 CyclicBarrier 很有用。因为该 barrier 在释放等待线程后可以重用，所以称它为循环 的 barrier。2、使用场景：需要所有的子任务都完成时，才执行主任务，这个时候就可以选择使用Cyclic">
 
 
 
@@ -125,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://wjwei113.github.io/2017/05/25/cj37185gb00035dzkfog1h0l8/"/>
+  <link rel="canonical" href="http://wjwei113.github.io/2017/05/25/cj3lavkyt0003hizk0bk3q7q8/"/>
 
 
 
 
 
-  <title>test | 牛刀试浮云的技术博客</title>
+  <title>Java之CyclicBarrier使用 | 牛刀试浮云的技术博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -315,7 +318,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://wjwei113.github.io/2017/05/25/cj37185gb00035dzkfog1h0l8/">
+    <link itemprop="mainEntityOfPage" href="http://wjwei113.github.io/2017/05/25/cj3lavkyt0003hizk0bk3q7q8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.Walter">
@@ -332,7 +335,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test</h1>
+          <h1 class="post-title" itemprop="name headline">Java之CyclicBarrier使用</h1>
         
 
         <div class="post-meta">
@@ -344,7 +347,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-25T18:29:53+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-25T18:32:16+08:00">
                 2017-05-25
               </time>
             
@@ -367,8 +370,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Testing/" itemprop="url" rel="index">
-                    <span itemprop="name">Testing</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
 
@@ -401,7 +404,8 @@
       
 
       
-        
+        <p>1、类说明：<br>一个同步辅助类，它允许一组线程互相等待，直到到达某个公共屏障点 (common barrier point)。在涉及一组固定大小的线程的程序中，这些线程必须不时地互相等待，此时 CyclicBarrier 很有用。因为该 barrier 在释放等待线程后可以重用，所以称它为循环 的 barrier。<br>2、使用场景：<br>需要所有的子任务都完成时，才执行主任务，这个时候就可以选择使用CyclicBarrier。<br>3、相关实例<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CyclicBarrierTest</span> </span>&#123;</div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException, InterruptedException </span>&#123;</div><div class="line">        <span class="comment">//如果将参数改为4，但是下面只加入了3个选手，这永远等待下去  </span></div><div class="line">        <span class="comment">//Waits until all parties have invoked await on this barrier.   </span></div><div class="line">        CyclicBarrier barrier = <span class="keyword">new</span> CyclicBarrier(<span class="number">3</span>);  </div><div class="line">        ExecutorService executor = Executors.newFixedThreadPool(<span class="number">3</span>);  </div><div class="line">        executor.submit(<span class="keyword">new</span> Thread(<span class="keyword">new</span> Runner(barrier, <span class="string">"1号选手"</span>)));  </div><div class="line">        executor.submit(<span class="keyword">new</span> Thread(<span class="keyword">new</span> Runner(barrier, <span class="string">"2号选手"</span>)));  </div><div class="line">        executor.submit(<span class="keyword">new</span> Thread(<span class="keyword">new</span> Runner(barrier, <span class="string">"3号选手"</span>)));  </div><div class="line">        executor.shutdown();  </div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Runner</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</div><div class="line">    <span class="comment">// 一个同步辅助类，它允许一组线程互相等待，直到到达某个公共屏障点 (common barrier point)</span></div><div class="line">    <span class="keyword">private</span> CyclicBarrier barrier;</div><div class="line">    <span class="keyword">private</span> String name;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Runner</span><span class="params">(CyclicBarrier barrier, String name)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>();  </div><div class="line">        <span class="keyword">this</span>.barrier = barrier;  </div><div class="line">        <span class="keyword">this</span>.name = name;  </div><div class="line">    &#125;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">try</span> &#123;  </div><div class="line">            Thread.sleep(<span class="number">1000</span> * (<span class="keyword">new</span> Random()).nextInt(<span class="number">8</span>));  </div><div class="line">            System.out.println(name + <span class="string">" 准备好了..."</span>);  </div><div class="line">            <span class="comment">// barrier的await方法，在所有参与者都已经在此 barrier 上调用 await 方法之前，将一直等待。  </span></div><div class="line">            barrier.await();  </div><div class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;  </div><div class="line">            e.printStackTrace();  </div><div class="line">        &#125; <span class="keyword">catch</span> (BrokenBarrierException e) &#123;  </div><div class="line">            e.printStackTrace();  </div><div class="line">        &#125;  </div><div class="line">        System.out.println(name + <span class="string">" 起跑！"</span>);  </div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -430,7 +434,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/test/" rel="tag"># test</a>
+            <a href="/tags/多线程/" rel="tag"># 多线程</a>
+          
+            <a href="/tags/Thread/" rel="tag"># Thread</a>
           
         </div>
       
@@ -443,8 +449,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/25/cj37185g100015dzkcb1norp6/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/05/25/cj3lavkz60008hizkw3f4aznq/" rel="next" title="Java之Exchanger使用">
+                <i class="fa fa-chevron-left"></i> Java之Exchanger使用
               </a>
             
           </div>
@@ -453,8 +459,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/25/cj37185gp00095dzk1l89zifp/" rel="prev" title="第一篇文章">
-                第一篇文章 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/27/cj3lavkyh0001hizk0z2y780s/" rel="prev" title="Java之CountDownLatch使用">
+                Java之CountDownLatch使用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -529,7 +535,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -540,7 +546,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
